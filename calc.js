@@ -4,29 +4,33 @@ const calc = (operation) => {
     switch (operation) {
         case 'plus' :
             const plus = (firstNumber, secondNumber) => {
-                result = firstNumber + secondNumber
-                return console.log(result)
+                result = firstNumber + secondNumber;
+                console.log(result);
+                return result
             }
             return plus;
 
         case 'minus' :
             const minus = (firstNumber, secondNumber) => {
                 result = firstNumber - secondNumber
-                return console.log(result)
+                console.log(result);
+                return result
             }
             return minus;
 
         case 'multiply' :
             const multiply = (firstNumber, secondNumber) => {
                 result = firstNumber * secondNumber
-                return console.log(result)
+                console.log(result);
+                return result
             }
             return multiply;
 
         case 'divide' :
             const divide = (firstNumber, secondNumber) => {
                 result = firstNumber / secondNumber
-                return console.log(result)
+                console.log(result);
+                return result
             }
             return divide;
     }
