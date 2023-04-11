@@ -12,7 +12,7 @@ const masha = { name: "Маша", surname: "Петрова", id: 3 };
 const users = [ vasya, petya, masha ];
 
 const usersMapped = users.map(item => {
-  return  {fullName: `${item.name} ${item.surname}`, id: [item.id]}
+  return  {fullName: `${item.name} ${item.surname}`, id: item.id}
 
 })
 
