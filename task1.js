@@ -12,13 +12,14 @@ camelize("list-style-image") == 'listStyleImage';
 camelize("-webkit-transition") == 'WebkitTransition';
 */
 
-const cutElement = (arr, element) => arr.filter(item => item !== element)
+//функци для проверки присутствия элемента
+const isItemExist = (item) => item !== '';
+
 
 const camelize = (str) => {
-
-const tempArr = cutElement(str.split('-'), '');
-const result = tempArr.map((item, index) => {
-  return index >= 1 ? item[0].toUpperCase() + item.slice(1) : item;
+    const tempArr = str.split('-').filter(isItemExist)
+    const result = tempArr.map((item, index) => {
+    return index >= 1 ? item[0].toUpperCase() + item.slice(1) : item;
     }
 );
    return result.join('');
