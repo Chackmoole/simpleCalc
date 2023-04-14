@@ -8,7 +8,7 @@ let masha = { name: "Маша", age: 28 };
 
 let arr = [ vasya, petya, masha ];
 
-const sortByAge = (users) => users.sort((a,b) => a.age > b.age ? 1 : -1);
+const sortByAge = (users) => users.sort((a,b) => a.age - b.age);
 
 sortByAge(arr)
 
