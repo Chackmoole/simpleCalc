@@ -10,7 +10,7 @@ const getRandomInteger = (min, max) => {
     return Math.floor(rand);
 }
 
-const creatIndexArray = (arr) => {
+const createIndexArray = (arr) => {
     let result = [];
     while (result.length < arr.length) {
       let randomNum = getRandomInteger(0, arr.length - 1);
@@ -21,13 +21,8 @@ const creatIndexArray = (arr) => {
     return result
 }
 
-const shuffle = (arr) => {
-    let result = [];
-    const indexArr = creatIndexArray(arr);
-    for(let i = 0; i < arr.length; i += 1) {
-    result.push({item: arr[i], index : indexArr[i]})
-    }
-    return result.sort((a,b) => a.index > b.index ? 1 : -1).map((item) => item.item)
-}
+//создаем массив слуачйных индексов на основе массива, мапимся по нему и возвращаем на его основе перемешанный массив
+const shuffle = (arr) => createIndexArray(arr).map((item) => arr[item]);
+
 
 console.log(shuffle(arr));
