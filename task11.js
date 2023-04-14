@@ -12,7 +12,7 @@ let arr = [ vasya, petya, masha ];
 
 const getAverageAge = (arr) => {
   let sum = 0;
-  arr.map((item) => sum += item.age)
+  arr.forEach((item) => sum += item.age)
   return sum / arr.length;
 }
 
