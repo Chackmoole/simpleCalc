@@ -9,12 +9,11 @@ let strings = ["кришна", "кришна", "харе", "харе",
 
 const unique = (arr) => {
  const result = [];
- const tempArr = arr.slice();
-    for (let tempArrElement of tempArr) {
-        if (!result.includes(tempArrElement)) {
-            result.push(tempArrElement)
-        }
-    }
+ for (let tempArrElement of arr) {
+     if (!result.includes(tempArrElement)) {
+         result.push(tempArrElement)
+     }
+ }
  return result;
 }
 
