@@ -46,7 +46,7 @@ const groupById = (arr) => {
     //         return accumulator;
     //     }, [{}]);
 
-    let result = {};
+    const result = {};
     // result.o = arr[0].id;
 
     // через for
