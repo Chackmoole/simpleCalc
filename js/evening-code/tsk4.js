@@ -12,7 +12,7 @@
 
 const isEmpty = (object) => {
    for (let key in object){
-       if(!(object[key] === '' || object[key] === null || isNaN(object[key]) || object[key] === undefined) ){
+       if(Boolean(object[key]) ){
           return false
        }
    }
@@ -21,5 +21,5 @@ const isEmpty = (object) => {
 
 const data = { a: 1, b: undefined };
 const data2 = { a: undefined };
-console.log(isEmpty(data)); // false
-console.log(isEmpty(data2)); // true
+console.log(isEmpty(data), 'false'); // false
+console.log(isEmpty(data2), 'true'); // true
