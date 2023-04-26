@@ -16,8 +16,7 @@ const isEmptyDeep = (object) => {
         if (typeof object[objectKey] === 'object'){
           return isEmptyDeep(object[objectKey])
         }
-        if(!(object[objectKey] === '' || object[objectKey] === null || object[objectKey] === undefined ||
-            isNaN(object[objectKey]))){
+        if(Boolean(object[objectKey])){
             return false;
         }
     }
