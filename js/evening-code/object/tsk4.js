@@ -6,7 +6,7 @@
  ({ a: 1 }) => false
  * Пустые значения: '', null, NaN, undefined
  * Сложность задачи: 2 of 5
- * @param {Object} object - объект с примитивами
+ * @param {object} object - объект с примитивами
  * @returns {boolean}
  */
 

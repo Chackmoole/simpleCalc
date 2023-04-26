@@ -3,8 +3,8 @@
  * Описание задачи: Напишите функцию, которая поверхностно сравнивает два объекта.
  * Ожидаемый результат: True если объекты идентичны, false если объекты разные ({ a: 1, b: 1 }, { a: 1, b: 1 }) => true
  * Сложность задачи: 2 of 5
- * @param {Object<string | number>} firstObj - объект с примитивами
- * @param {Object<string | number>} secondObj - объект с примитивами
+ * @param {object<string | number>} firstObj - объект с примитивами
+ * @param {object<string | number>} secondObj - объект с примитивами
  * @returns {boolean}
  */
 

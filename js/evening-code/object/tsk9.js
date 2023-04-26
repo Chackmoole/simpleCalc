@@ -3,9 +3,9 @@
 /*
  * Описание задачи: Напишите функцию, которая поверхностно находит пересечения объектов и возвращает объект пересечений.
  * Ожидаемый результат: ({ a: 1, b: 2 }, { c: 1, b: 2 }) => { b: 2 }
- * @param {Object<string | number>} firstObj - объект с примитивными значениями
- * @param {Object<string | number>} secondObj - объект с примитивными значениями
- * @returns {Object}
+ * @param {object<string | number>} firstObj - объект с примитивными значениями
+ * @param {object<string | number>} secondObj - объект с примитивными значениями
+ * @returns {object}
  */
 
 const intersection = (firstObject, secondObject) => {
