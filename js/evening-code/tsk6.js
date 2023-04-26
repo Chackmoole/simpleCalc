@@ -11,22 +11,17 @@
  * @returns {?}
  */
 
-//к методу массива с параметрами вернуться после изучения прототипа
+//TODO к методу массива с параметрами вернуться после изучения прототипа
 
 const data = { a: { b: [1, 2, 3] } }
 
-const invoke = (object, path, func) => {
+const invoke = (object, path) => {
     let splittedPath = path.split('.') // ['a', 'b']
-    let result = {...object} // object
-    let i = 0;
+    return splittedPath.reduce((acc, item) => {
+        acc = acc[item];
+        return acc
+    }, object)
 
-    while (i <= splittedPath.length) {
-        let piecePath = splittedPath.shift()
-        result = result[piecePath]
-      i++
-    }
-
-    return result
 };
 // console.log(invoke(data, 'a.b', 'splice', [1, 2])); // [2, 3]
 
