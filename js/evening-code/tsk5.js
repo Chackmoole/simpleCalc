@@ -9,7 +9,9 @@
  */
 
 const isEqual = (firstObject, secondObject) => {
-    if(Object.keys(firstObject).length !== Object.keys(secondObject).length) return false;
+    if(Object.keys(firstObject).length !== Object.keys(secondObject).length) {
+        return false;
+    }
     for (const firstObjectKey in firstObject) {
         for (const secondObjectKey in secondObject) {
             if (firstObject[firstObjectKey] !== secondObject[secondObjectKey]) {
